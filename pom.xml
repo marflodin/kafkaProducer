@@ -24,7 +24,9 @@
     </properties>
 
     <modules>
+        <module>datamodel</module>
         <module>domainlogic</module>
+        <module>webservice</module>
     </modules>
 
     <dependencyManagement>
