@@ -1,6 +1,5 @@
 package com.marflo.kafkamodel.util;
 
-import com.mongodb.Mongo;
 import com.mongodb.MongoClient;
 import com.mongodb.MongoException;
 import org.slf4j.Logger;
