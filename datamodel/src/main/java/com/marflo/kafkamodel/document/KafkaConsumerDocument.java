@@ -1,15 +1,23 @@
 package com.marflo.kafkamodel.document;
 
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
+import org.bson.types.ObjectId;
+import org.mongodb.morphia.annotations.Entity;
+import org.mongodb.morphia.annotations.Id;
 
-@XmlRootElement(name="KafkaConsumer")
+@Entity
 public class KafkaConsumerDocument {
 
-    @XmlElement(name="groupId")
+    @Id private ObjectId id;
     private String groupId;
-    @XmlElement(name="topic")
     private String topic;
+
+    public ObjectId getId() {
+        return id;
+    }
+
+    public void setId(ObjectId id) {
+        this.id = id;
+    }
 
     public String getGroupId() {
         return groupId;
