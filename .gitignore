@@ -8,6 +8,9 @@
 *.war
 *.ear
 
+# Target folders #
+*/target/**
+
 # Intellij files #
 *.iml
 .idea/
